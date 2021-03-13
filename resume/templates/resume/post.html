@@ -1,0 +1,19 @@
+{% extends 'resume/main.html' %}
+{% load static %}
+{% block content %}
+
+	<div class="left-column">
+
+		<img id="profile_pic" src="{{post.thumbnail.url}}">
+
+		<h1>{{post.headline}}</h1>
+		<h4>{{post.sub_headline}}</h4>
+
+		
+
+		<p>{{post.body|safe}}</p>
+	</div>
+
+{% endblock content %}
+
+
